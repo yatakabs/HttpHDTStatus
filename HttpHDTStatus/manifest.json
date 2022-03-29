@@ -10,6 +10,6 @@
     "BSIPA": "^4.2.0",
     "HttpSiraStatus": "^7.0.0",
     "SiraUtil": "^3.0.0",
-    "HeadDistanceTravelled": "^0.0.1"
+    "HeadDistanceTravelled": "^0.0.2"
   }
 }
