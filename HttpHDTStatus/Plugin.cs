@@ -29,14 +29,12 @@ namespace HttpHDTStatus
         public void OnApplicationStart()
         {
             Log.Debug("OnApplicationStart");
-
         }
 
         [OnExit]
         public void OnApplicationQuit()
         {
             Log.Debug("OnApplicationQuit");
-
         }
     }
 }
