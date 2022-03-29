@@ -3,12 +3,6 @@ using HttpSiraStatus;
 using HttpSiraStatus.Interfaces;
 using HttpSiraStatus.Util;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
@@ -48,8 +42,8 @@ namespace HttpHDTStatus
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // メンバ変数
         private bool _disposedValue;
-        private IHeadDistanceTravelledController _controller;
-        private IStatusManager _statusManager;
+        private readonly IHeadDistanceTravelledController _controller;
+        private readonly IStatusManager _statusManager;
         #endregion
         //ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*ﾟ+｡｡+ﾟ*｡+ﾟ ﾟ+｡*
         #region // 構築・破棄
@@ -62,18 +56,18 @@ namespace HttpHDTStatus
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!_disposedValue) {
+            if (!this._disposedValue) {
                 if (disposing) {
                     this._controller.OnDistanceChanged -= this.OnDistanceChanged;
                 }
-                _disposedValue = true;
+                this._disposedValue = true;
             }
         }
 
         public void Dispose()
         {
             // このコードを変更しないでください。クリーンアップ コードを 'Dispose(bool disposing)' メソッドに記述します
-            Dispose(disposing: true);
+            this.Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
         #endregion
