@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "HttpHDTStatus",
+  "name": "HttpHDTStatus",
+  "author": "",
+  "version": "0.0.1",
+  "description": "",
+  "gameVersion": "1.18.3",
+  "dependsOn": {
+    "BSIPA": "^4.2.0",
+    "HttpSiraStatus": "6.0.1",
+    "SiraUtil": "^3.0.0",
+    "HeadDistaiceTravelled": "^0.0.1"
+  }
+}
