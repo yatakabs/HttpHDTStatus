@@ -5,6 +5,7 @@ HMDの移動距離をオーバーレイで表示するためのMod
 - SiraUtil
 - HeadDistanceTravelled
 # パラメーター
+Otherとして飛んできます。
 ```json
 {
     "HeadDistanceTravelled": {
